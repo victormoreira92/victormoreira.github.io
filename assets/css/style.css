@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cabecalho {
+  width: 100%;
+  font-family: "Kalam", cursive;
+  background-color: #0096FF;
+  padding: 10px 32px 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  width: 1248px;
+  padding: 0 35px;
+}
+
+.menu {
+  width: 60%;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  color: #FEFBF6;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.menu__link::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #EF5B0C;
+  transform: scaleX(0);
+  transition: 250ms transform ease-in;
+}
+
+.menu__item:hover .menu__link::after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+.banner {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+  background: linear-gradient(-35deg, #2a4849, #222e50, #426b69, #8bb174, #b5ca8d);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* #dddf00, #d4d700, 
+    #bfd200,#aacc00,#80b918,#2b9348*/
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.content__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.name {
+  color: greenyellow;
+}
+
+.section-header {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.section-header .line {
+  border: 2px solid #2b9348;
+  background-color: #2b9348;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 5px 0 10px 0;
+}
+.section-header .subtitle {
+  font-weight: bold;
+}
+
+.sobremim__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 35px;
+}
+.sobremim__content .container__imagem {
+  padding: 0 65px;
+  width: 40%;
+}
+.sobremim__content .sobremim__imagem {
+  background: url("../imagem/desenvolvedor.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 322px;
+  height: 322px;
+  border-radius: 50%;
+  border: 5px solid #f77f00;
+}
+.sobremim__content .sobremim__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.sobremim__content .text__description {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tecnologys {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 25px;
+}
+.tecnologys .tecnologys__lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  width: 50%;
+}
+.tecnologys .tecnologys__lista .techonology__item {
+  width: 25%;
+}
+.tecnologys .tecnologys__lista .techonology__item .techonology__btn {
+  outline: none;
+  width: 135px;
+  height: 135px;
+  padding: 10px 0;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.tecnologys .tecnologys__lista .techonology__item .techonology__btn:hover {
+  filter: grayscale(0);
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(1) .techonology__btn {
+  background: url("../imagem/icon/html.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(2) .techonology__btn {
+  background: url("../imagem/icon/css.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(3) .techonology__btn {
+  background: url("../imagem/icon/javascript.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(4) .techonology__btn {
+  background: url("../imagem/icon/sass.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(5) .techonology__btn {
+  background: url("../imagem/icon/react.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(6) .techonology__btn {
+  background: url("../imagem/icon/angular.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(7) .techonology__btn {
+  background: url("../imagem/icon/git.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .tecnologys__lista .techonology__item:nth-child(8) .techonology__btn {
+  background: url("../imagem/icon/java.png");
+  background-size: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.tecnologys .skills__desciption {
+  font-size: 1.5rem;
+}
+
+.projects__content {
+  display: flex;
+  justify-content: center;
+}
+.projects__content .projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  width: 80%;
+}
+.projects__content .projects__list .project__item {
+  width: 30%;
+}
+.projects__content .projects__list .project__item .project__imagem {
+  background-image: url("../imagem/projetos/projeto.jpeg");
+  background-size: cover;
+  width: 320px;
+  height: 170px;
+}
+.projects__content .projects__list .project__item .project__name {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.projects__content .projects__list .project__item .project__description {
+  margin: 15px 0;
+  text-align: justify;
+}
+.projects__content .projects__list .project__item .btns {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+.projects__content .projects__list .project__item .btns .btn__see {
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: #2b9348;
+  color: aliceblue;
+  font-weight: bold;
+}
+.projects__content .projects__list .project__item .btns .btn__see:hover {
+  background-color: #046820;
+}
+
+.contact {
+  padding-bottom: 25px;
+}
+.contact .contact__container {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact__container .contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 15px 0;
+  background-color: rgb(255, 225, 189);
+  padding: 25px;
+}
+.contact .contact__container .contact__form .contact__label {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.contact .contact__container .contact__form .contact__input {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  box-shadow: 2px 2px red;
+  outline: none;
+  border: none;
+}
+.contact .contact__container .contact__form .contact__textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  box-shadow: 2px 2px red;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+}
+.contact .contact__container .contact__form .contact__enviar {
+  padding: 15px 0;
+  width: 150px;
+  margin: 0 auto;
+  background-color: rgb(0, 255, 0);
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+.contact .contact__container .contact__form .contact__enviar:hover {
+  background-color: rgb(0, 177, 0);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

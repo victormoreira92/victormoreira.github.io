@@ -1,0 +1,39 @@
+.banner{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+    background: linear-gradient(-35deg, #2a4849,#222e50,#426b69,#8bb174,#b5ca8d);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* #dddf00, #d4d700, 
+    #bfd200,#aacc00,#80b918,#2b9348*/
+.banner__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5;
+}
+.content__title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.name{
+    color:greenyellow
+}

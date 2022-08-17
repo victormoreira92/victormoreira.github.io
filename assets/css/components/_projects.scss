@@ -1,0 +1,47 @@
+.projects__content{
+    display: flex;
+    justify-content: center;
+    .projects__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 25px;
+        column-gap: 25px;
+        width: 80%;
+        .project__item{
+            width: 30%;
+            .project__imagem{
+                background-image: url('../imagem/projetos/projeto.jpeg');
+                background-size: cover;
+                width: 320px;
+                height: 170px;
+            }
+            .project__name{
+                font-size: 1.2rem;
+                margin:15px 0;
+            }
+            .project__description{
+                margin: 15px 0;
+                text-align: justify;
+            }
+            .btns{
+                display: flex;
+                justify-content: space-around;
+                margin:15px;
+                .btn__see{
+                    border-radius: 15px;
+                    padding: 5px 15px;
+                    border:none;
+                    outline:none;
+                    background-color: #2b9348;
+                    color:aliceblue;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #046820;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../base/base';
+.tecnologys{
+    display: flex;
+    justify-content: space-around;
+    padding:  0 25px;
+    .tecnologys__lista{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        width: 50%;
+        .techonology__item{
+            width: 25%;
+            .techonology__btn{
+                outline: none;
+                width: 135px;
+                height: 135px;
+                padding: 10px 0;
+                filter: grayscale(1);
+                cursor:pointer;
+                &:hover{
+                    filter: grayscale(0);
+                }
+            }
+
+        }
+            
+        .techonology__item:nth-child(1) .techonology__btn{
+            @include icon(html)
+
+        }
+        .techonology__item:nth-child(2) .techonology__btn{
+            @include icon(css)
+
+        }
+        .techonology__item:nth-child(3) .techonology__btn{
+            @include icon(javascript)
+
+        }
+        .techonology__item:nth-child(4) .techonology__btn{
+            @include icon(sass)
+        }
+        .techonology__item:nth-child(5) .techonology__btn{
+            @include icon(react)
+
+        }
+        .techonology__item:nth-child(6) .techonology__btn{
+            @include icon(angular)
+        }
+        .techonology__item:nth-child(7) .techonology__btn{
+            @include icon(git)
+
+        }
+        .techonology__item:nth-child(8) .techonology__btn{
+            @include icon(java)
+        }
+        
+    }
+    .skills__desciption{
+        font-size:1.5rem;
+    }
+}
