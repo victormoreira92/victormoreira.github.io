@@ -1,28 +1,36 @@
-.sobremim__content{
+.aboutme{
     display: flex;
-    justify-content: space-around;
-    padding: 0 35px;
-    .container__imagem{
-        padding: 0 65px;
-        width: 40%;
-    }
-    .sobremim__imagem{
-        background: url('../imagem/desenvolvedor.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        width: 322px;
-        height: 322px;
-        border-radius: 50%;
-        border: 5px solid #f77f00;
-       
-    }
-    .sobremim__title{
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-    .text__description{
-        font-size:1.5rem;
-        line-height: 1.4;
+    flex-direction: column;
+    justify-content: center;
+    .sobremim__content{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 35px;
+        .container__imagem{
+            padding: 0 65px;
+            width: 40%;
+        }
+        .sobremim__imagem{
+            background: url('../imagem/desenvolvedor.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 322px;
+            height: 322px;
+            border-radius: 50%;
+            border: 5px solid #f77f00;
+           
+        }
+        .sobremim__text{
+            .sobremim__title{
+                font-size: 1.8rem;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .text__description{
+                font-size:1.5rem;
+                line-height: 1.5;
+            }
+        }
+            
     }
 }

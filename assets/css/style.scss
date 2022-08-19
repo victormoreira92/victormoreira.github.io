@@ -6,6 +6,8 @@
 @import './components/skills';
 @import './components/projects';
 @import './components/contact';
+@import './components/btn';
+@import './components/sections-animation';
 
 html{
     font-family: 'Open Sans', sans-serif;
@@ -17,3 +19,17 @@ body{
     align-items: center;
 }
 
+main{
+    background-color: #ededf4;   
+    color:#000000;
+    width: 100vw;
+   
+}
+.content__container{
+    width: 1200px;    
+    margin: 0 auto;
+}
+section:not(.banner){
+    margin: 50px 0;
+
+}

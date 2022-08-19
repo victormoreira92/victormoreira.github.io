@@ -1,26 +1,30 @@
 @import '../base/base';
+
 .tecnologys{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding:  0 25px;
     .tecnologys__lista{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
+        column-gap: 10px;
         row-gap: 10px;
-        width: 50%;
+        width: 30%;
         .techonology__item{
-            width: 25%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
             .techonology__btn{
                 outline: none;
                 width: 135px;
                 height: 135px;
                 padding: 10px 0;
-                filter: grayscale(1);
                 cursor:pointer;
-                &:hover{
-                    filter: grayscale(0);
-                }
+                          
+            }
+            &:hover .techonology__btn{
+                margin: -15px 0 15px 0;
             }
 
         }
@@ -54,9 +58,13 @@
         .techonology__item:nth-child(8) .techonology__btn{
             @include icon(java)
         }
+        .techonology__item:nth-child(9) .techonology__btn{
+            @include icon(java)
+        }
         
     }
     .skills__desciption{
         font-size:1.5rem;
+        margin: 0 0 0 105px;
     }
 }

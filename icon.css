@@ -1,13 +1,15 @@
 
-.material-icons{
+material-icons{
     font-size: 135px
 }
-.fa-bacterium{
-    top:10%;
-    left: 30%;
-    color: green;
+.fa-solid{
+    color: black;
     animation: icon-move 500ms;
+    font-size: 2rem;
+    font-weight: bold;
+
 }
+
 .colchetes{
     display:flex;
     align-items: center;
@@ -46,32 +48,73 @@
     width: 240px;
     transform: translate(-140px, 75px) rotate(455deg);
 }
-/*
+.arrow-back{
+    font-size: 7rem;
+    font-weight: bold;
+    position: relative;
+    animation: maior 2s ease-in  infinite;
+    left: -51px;
+}
+.arrow-foward{
+    font-size: 7rem;
+    font-weight: bold;
+    position: relative;
+    left: 85px;
+    animation: menor 2s ease-in  infinite;
+    text-align: right;
+    z-index: 90;
+}
 @keyframes maior {
     0%{
-        left:0%
+        left: -51px;
     }
     25%{
-        left:35%
+        left: 38px;
     }
     50%{
-        left:35%
+        left: 38px;
     }
     100%{
-        left:0%
+        left: -51px;
     }
 }
 @keyframes menor {
     0%{
-        right:0%
+        left:85px
     }
     25%{
-        right:25%
+        left: -45px;
     }
     50%{
-        right:25%
+        left: -45px;
     }
     100%{
-        right:0%
+        left:85px
     }
+}
+@keyframes barra-appear {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.barra{
+    position: relative;
+    bottom: 20px;
+    left: -20px;
+    font-size: 7rem;
+    animation: barra-appear 2.0s linear infinite;
+    opacity: 0;
+
 }

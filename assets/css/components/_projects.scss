@@ -1,24 +1,36 @@
-.projects__content{
+.projects{
+    background-color: #fa8500;
+   .projects__content{
     display: flex;
     justify-content: center;
     .projects__list{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 25px;
-        column-gap: 25px;
         width: 80%;
+        row-gap: 30px;
+        column-gap: 20px;
+        padding: 15px 0;
         .project__item{
-            width: 30%;
+            width: 25%;
+            background: #ffffff;
+            padding: 15px;
+            box-shadow: 2px 2px 2px #e1e1e1;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                margin: -15px 0 15px 0;
+            }
             .project__imagem{
                 background-image: url('../imagem/projetos/projeto.jpeg');
                 background-size: cover;
-                width: 320px;
-                height: 170px;
+                width: 220px;
+                height: 120px;
+                margin: 0 auto;
             }
             .project__name{
                 font-size: 1.2rem;
                 margin:15px 0;
+                font-weight: bold;
             }
             .project__description{
                 margin: 15px 0;
@@ -44,4 +56,6 @@
             }
         }
     }
+} 
 }
+
