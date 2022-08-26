@@ -55,3 +55,7 @@ table {
     background-position: center;
     border: none;
 }
+@mixin title-position($position) {
+	display: flex;
+    justify-content: $position;
+}

@@ -1,24 +1,25 @@
 .section-header{
-    padding:50px 0;
+    padding:40px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    z-index: 1;
     .title{
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
+        width: 20%;
+        padding: 10px 20px;
+        border-bottom: 2px solid orange;
+        position: relative;
         letter-spacing: 2px;
-
-    }
-    .line{
-        border: 2px solid #EF5B0C;
-        background-color: #EF5B0C;
-        width: 35px;
-        height: 5px;
-        border-radius: 10px;
-        margin: 5px 0 10px 0;
-    }
-    .subtitle{
-        font-weight:bold;
+        &::before{
+            content: "";
+            position: absolute;
+            border: 2px solid orange;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: orange;
+            top: 2.8rem;
+            left: -1px;
+        }
     }
 }

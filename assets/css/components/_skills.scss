@@ -1,70 +1,50 @@
 @import '../base/base';
 
-.tecnologys{
-    display: flex;
-    justify-content: center;
-    padding:  0 25px;
-    .tecnologys__lista{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        column-gap: 10px;
-        row-gap: 10px;
-        width: 30%;
-        .techonology__item{
-            width: 30%;
-            display: flex;
-            justify-content: center;
-            .techonology__btn{
-                outline: none;
-                width: 135px;
-                height: 135px;
-                padding: 10px 0;
-                cursor:pointer;
-                          
-            }
-            &:hover .techonology__btn{
-                margin: -15px 0 15px 0;
-            }
-
-        }
-            
-        .techonology__item:nth-child(1) .techonology__btn{
-            @include icon(html)
-
-        }
-        .techonology__item:nth-child(2) .techonology__btn{
-            @include icon(css)
-
-        }
-        .techonology__item:nth-child(3) .techonology__btn{
-            @include icon(javascript)
-
-        }
-        .techonology__item:nth-child(4) .techonology__btn{
-            @include icon(sass)
-        }
-        .techonology__item:nth-child(5) .techonology__btn{
-            @include icon(react)
-
-        }
-        .techonology__item:nth-child(6) .techonology__btn{
-            @include icon(angular)
-        }
-        .techonology__item:nth-child(7) .techonology__btn{
-            @include icon(git)
-
-        }
-        .techonology__item:nth-child(8) .techonology__btn{
-            @include icon(java)
-        }
-        .techonology__item:nth-child(9) .techonology__btn{
-            @include icon(java)
-        }
-        
+.skills{
+    background-color: white;
+    padding-bottom: 50px;
+    .section-header{
+        @include title-position(flex-end)
     }
-    .skills__desciption{
-        font-size:1.5rem;
-        margin: 0 0 0 105px;
+    .tools{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:  0 25px;
+        .tools__paragraph{
+            font-size: 1.2rem;
+        }
+        .tools__list{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .tools__item{
+                margin: 10px 0;
+                .item__legend{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 0;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    padding-left: 5px;
+                }
+                .item__bar{
+                    width: 100%;
+                    background-color: #e1e1e1;
+                    border: 2px solid black;
+                    height: 1rem;
+                    border-radius: 15px;
+                    .bar__progress{
+                        width: 50%;
+                        background-color: orange;
+                        height: 12px;
+                        border: 2px solid orange;
+                        border-radius: 15px;
+                    }
+                }
+                
+            }
+        }
     }
 }
+

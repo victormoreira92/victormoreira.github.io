@@ -61,6 +61,7 @@ table {
   justify-content: center;
   border-bottom: 3px solid #002355;
   position: fixed;
+  z-index: 99;
 }
 
 .cabecalho__container {
@@ -238,59 +239,29 @@ table {
   }
 }
 .section-header {
-  padding: 50px 0;
+  padding: 40px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: 1;
 }
 .section-header .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+  width: 20%;
+  padding: 10px 20px;
+  border-bottom: 2px solid orange;
+  position: relative;
   letter-spacing: 2px;
 }
-.section-header .line {
-  border: 2px solid #EF5B0C;
-  background-color: #EF5B0C;
-  width: 35px;
-  height: 5px;
-  border-radius: 10px;
-  margin: 5px 0 10px 0;
-}
-.section-header .subtitle {
-  font-weight: bold;
-}
-
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.aboutme .sobremim__content {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 35px;
-}
-.aboutme .sobremim__content .container__imagem {
-  padding: 0 65px;
-  width: 40%;
-}
-.aboutme .sobremim__content .sobremim__imagem {
-  background: url("../imagem/desenvolvedor.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 320px;
-  height: 422px;
-  border-right: 20px solid #f77f00;
-  border-bottom: 20px solid #f77f00;
-}
-.aboutme .sobremim__content .sobremim__text .sobremim__title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.aboutme .sobremim__content .sobremim__text .text__description {
-  font-size: 1.5rem;
-  line-height: 1.5;
+.section-header .title::before {
+  content: "";
+  position: absolute;
+  border: 2px solid orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: orange;
+  top: 2.8rem;
+  left: -1px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -347,212 +318,452 @@ table {
   border-spacing: 0;
 }
 
-.tecnologys {
+.aboutme {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 25px;
 }
-.tecnologys .tecnologys__lista {
+.aboutme .section-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.aboutme .aboutme__content {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: 10px;
-  width: 30%;
+  width: 100%;
 }
-.tecnologys .tecnologys__lista .techonology__item {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-}
-.tecnologys .tecnologys__lista .techonology__item .techonology__btn {
-  outline: none;
-  width: 135px;
-  height: 135px;
-  padding: 10px 0;
-  cursor: pointer;
-}
-.tecnologys .tecnologys__lista .techonology__item:hover .techonology__btn {
-  margin: -15px 0 15px 0;
-}
-.tecnologys .tecnologys__lista .techonology__item:nth-child(1) .techonology__btn {
-  background: url("../imagem/icon/html.png");
-  background-size: 95px;
+.aboutme .aboutme__content .aboutme__image {
+  background: url("../imagem/desenvolvedor.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+  background-size: cover;
+  height: 588px;
+  width: 40%;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(2) .techonology__btn {
-  background: url("../imagem/icon/css.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text {
+  width: 50%;
+  padding: 50px 10px;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(3) .techonology__btn {
-  background: url("../imagem/icon/javascript.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .text__paragraph {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 10px 0;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(4) .techonology__btn {
-  background: url("../imagem/icon/sass.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .text__paragraph .text__name {
+  font-weight: bold;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(5) .techonology__btn {
-  background: url("../imagem/icon/react.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .btn__link {
+  position: relative;
+  width: 48%;
+  border: 2px solid orange;
+  display: block;
+  padding: 15px;
+  font-size: 1.3rem;
+  color: orange;
+  z-index: 3;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(6) .techonology__btn {
-  background: url("../imagem/icon/angular.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .btn__link .icon__curriculum {
+  margin: 0px 5px;
+  font-size: 2rem;
+  color: orange;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(7) .techonology__btn {
-  background: url("../imagem/icon/git.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .btn__link::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 100%;
+  top: 1%;
+  right: 0%;
+  height: 0px;
+  background-color: orange;
+  z-index: -1;
+  transition: all 300ms linear;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(8) .techonology__btn {
-  background: url("../imagem/icon/java.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .btn__link::after {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 100%;
+  top: 1%;
+  right: 1%;
+  height: 52px;
+  background-color: white;
+  z-index: -1;
+  border: 2px solid orange;
+  visibility: hidden;
 }
-.tecnologys .tecnologys__lista .techonology__item:nth-child(9) .techonology__btn {
-  background: url("../imagem/icon/java.png");
-  background-size: 95px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+.aboutme .aboutme__content .aboutme__text .btn__link:hover {
+  color: white;
 }
-.tecnologys .skills__desciption {
-  font-size: 1.5rem;
-  margin: 0 0 0 105px;
+.aboutme .aboutme__content .aboutme__text .btn__link:hover .icon__curriculum {
+  color: white;
+}
+.aboutme .aboutme__content .aboutme__text .btn__link:hover::before {
+  height: 100%;
+  -webkit-animation: background-btn 300ms linear;
+          animation: background-btn 300ms linear;
 }
 
-.projects {
-  background-color: #fa8500;
+@-webkit-keyframes background-btn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 42px;
+  }
 }
+
+@keyframes background-btn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 42px;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.skills {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.skills .section-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.skills .tools {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 25px;
+}
+.skills .tools .tools__paragraph {
+  font-size: 1.2rem;
+}
+.skills .tools .tools__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.skills .tools .tools__list .tools__item {
+  margin: 10px 0;
+}
+.skills .tools .tools__list .tools__item .item__legend {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+.skills .tools .tools__list .tools__item .item__bar {
+  width: 100%;
+  background-color: #e1e1e1;
+  border: 2px solid black;
+  height: 1rem;
+  border-radius: 15px;
+}
+.skills .tools .tools__list .tools__item .item__bar .bar__progress {
+  width: 50%;
+  background-color: orange;
+  height: 12px;
+  border: 2px solid orange;
+  border-radius: 15px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .projects .projects__content {
   display: flex;
   justify-content: center;
+}
+.projects .projects__content .section-header {
+  display: flex;
+  justify-content: flex-start;
 }
 .projects .projects__content .projects__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   row-gap: 30px;
   -moz-column-gap: 20px;
        column-gap: 20px;
   padding: 15px 0;
 }
 .projects .projects__content .projects__list .project__item {
-  width: 25%;
-  background: #ffffff;
-  padding: 15px;
-  box-shadow: 2px 2px 2px #e1e1e1;
+  width: 30%;
+  border: 4px solid orange;
   transition: all 200ms ease-in-out;
 }
 .projects .projects__content .projects__list .project__item:hover {
-  margin: -15px 0 15px 0;
+  box-shadow: 3px 3px 3px orange;
 }
 .projects .projects__content .projects__list .project__item .project__imagem {
   background-image: url("../imagem/projetos/projeto.jpeg");
   background-size: cover;
-  width: 220px;
-  height: 120px;
+  width: 100%;
+  height: 270px;
   margin: 0 auto;
+  border-bottom: 3px solid orange;
 }
-.projects .projects__content .projects__list .project__item .project__name {
+.projects .projects__content .projects__list .project__item .project__text {
+  padding: 0 15px;
+}
+.projects .projects__content .projects__list .project__item .project__text .project__name {
   font-size: 1.2rem;
   margin: 15px 0;
   font-weight: bold;
 }
-.projects .projects__content .projects__list .project__item .project__description {
+.projects .projects__content .projects__list .project__item .project__text .project__description {
   margin: 15px 0;
   text-align: justify;
 }
-.projects .projects__content .projects__list .project__item .btns {
+.projects .projects__content .projects__list .project__item .project__text .project__link {
   display: flex;
   justify-content: space-around;
   margin: 15px;
 }
-.projects .projects__content .projects__list .project__item .btns .btn__see {
-  border-radius: 15px;
-  padding: 5px 15px;
-  border: none;
-  outline: none;
-  background-color: #2b9348;
-  color: aliceblue;
-  font-weight: bold;
+.projects .projects__content .projects__list .project__item .project__text .btn__link {
+  border: 2px solid orange;
+  display: block;
+  font-size: 1rem;
+  padding: 10px;
+  color: black;
+  z-index: 3;
+  text-decoration: none;
+  margin: 1rem 0;
+  position: relative;
 }
-.projects .projects__content .projects__list .project__item .btns .btn__see:hover {
-  background-color: #046820;
+.projects .projects__content .projects__list .project__item .project__text .btn__link::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 0px;
+  background-color: orange;
+  transition: all 500ms ease-out;
+  z-index: -1;
+}
+.projects .projects__content .projects__list .project__item .project__text .btn__link:hover::before {
+  height: 100%;
+  -webkit-animation: background-btn 500ms ease-in;
+          animation: background-btn 500ms ease-in;
+}
+
+@keyframes background-btn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100%;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .contact {
   padding-bottom: 25px;
 }
-.contact .contact__container {
+.contact .section-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
-.contact .contact__container .contact__form {
+.contact .contact__list {
+  display: flex;
+  justify-content: space-around;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  padding: 20px 0;
+}
+.contact .contact__list .contact__icon-container {
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  background-color: orange;
+  border-radius: 50%;
+}
+.contact .contact__list .contact__icon-container .contact__icon {
+  margin-top: 15px;
+  color: white;
+  font-size: 2rem;
+}
+.contact .contact__list .contact__item {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding: 15px 0;
-  background-color: rgb(255, 225, 189);
-  padding: 25px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: all 500ms ease;
+  padding: 0 15px;
 }
-.contact .contact__container .contact__form .contact__label {
-  font-size: 1.2rem;
+.contact .contact__list .contact__item .contact__title {
   margin: 15px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-.contact .contact__container .contact__form .contact__input {
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  box-shadow: 2px 2px red;
-  outline: none;
-  border: none;
+.contact .contact__list .contact__item:hover {
+  transform: scale(1.2);
 }
-.contact .contact__container .contact__form .contact__textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  box-shadow: 2px 2px red;
-  outline: none;
-  border: none;
-  margin-bottom: 15px;
-}
-.contact .contact__container .contact__form .contact__enviar {
-  padding: 15px 0;
-  width: 150px;
-  margin: 0 auto;
-  background-color: rgb(0, 255, 0);
-  font-size: 1.2rem;
-  outline: none;
-  border: none;
-}
-.contact .contact__container .contact__form .contact__enviar:hover {
-  background-color: rgb(0, 177, 0);
-}
-
 .btn__backtop {
   width: 70px;
   height: 70px;
@@ -634,5 +845,5 @@ main {
 }
 
 section:not(.banner) {
-  margin: 50px 0;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
