@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/157e18743d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="icon.css">
+    <title>Victor Hugo Moreira</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="cabecalho__container">
+            <div class="cabecalho__logo">
+            <img src="./assets/imagem/logo.png" alt="logo do desenvolvedor" class="logo">
+            </div>
+            <nav class="menu">
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#home">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#aboutme">Sobre mim</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">Contato</a>
+                    </li>
+                    <li class="menu__item">
+                       
+                        <!--<button class="header__btn">
+                            <i class="material-icons">light_mode</i>
+                        </button>-->
+                    </li>
+                </ul>
+            </nav>
+           <div class="header__theme">
+                <button class="header__btn " id="theme">
+                    <i class="material-icons icon">light_mode</i>
+                </button>
+           </div>
+        </section>
+    
+        <section class="banner" id="home">
+        <div class="banner__container">
+            <div class="banner__animation">
+                <div class="ball__animation dark"></div>
+                <div class="ball__animation light"></div>
+
+            </div>
+            <div class="banner__content">
+                <h2 class="banner__text">Olá, eu sou <span class="name">Victor Moreira</span>.</h2>
+                <h2 class="banner__text">Sou desenvolvedor front-end em formação.</h2>
+                <h2 class="text__animation">casa</h2>
+            </div>
+        </div>
+        </section>
+
+    </header>
+
+    <main class="content">
+        <div class="content__container">
+            <section class="aboutme section-animation" id="aboutme">
+                <div class="section-header">
+                    <h2 class="title">Sobre mim</h2>
+                    <div class="circle"></div>
+                </div>
+                <div class="aboutme__content">
+                    <div class="aboutme__image"></div>
+                    <div class="aboutme__text">
+                        <p class="text__paragraph">Meu nome é <span class="name__bold">Victor Moreira</span>, sou um desenvolvedor front-end e estou cursando o curso Superior de Tecnologia de Sistemas de Computação, pela UFF/CEDERJ.</p>
+                        <p class="text__paragraph">Sou biólogo com mais de 4 anos de experiência, e decidi migrar para a área de tecnologia em busca de oprtunidade melhores.</p>
+                        <p class="text__paragraph">Conheci a área de tecnologia durante meu mestrado, desde então tenho buscado me aperfeiçoar cada vez mais nessa área.</p>
+                        <p class="text__paragraph">Estou aberto a oprtunidades onde eu possa contribuir, crescer e aprender. Se você possui alguma oportunidade que se encaixa com meu perfil, 
+                            por favor não se hesite em se <a href="#contact">comunicar comigo</a>.</p>
+                        <a class="btn__link" href="#">
+                            <i class="fa-solid fa-file-lines icon__curriculum"></i>
+                            Download currículo
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="skills section-animation" id="skills">
+                <div class="section-header">
+                    <h2 class="title">Habilidades</h2>
+                </div>
+                <div class="tools" id="tools">
+                    <p class="tools__paragraph">Essas são as habilidades, ferramentas e tecnologias que uso para dar vida aos meus projetos:</p>
+                    <ul class="tools__list">
+                        <li class="tools__item" data-tool="html" id="html">
+                            <div class="item__legend">
+                                <span class="legend__name">HTML</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="css"  id="css">
+                            <div class="item__legend">
+                                <span class="legend__name">css</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="javascript"  id="javascript">
+                            <div class="item__legend">
+                                <span class="legend__name">Javascript</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="react"  id="react">
+                            <div class="item__legend">
+                                <span class="legend__name">React</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="angular"  id="angular">
+                            <div class="item__legend">
+                                <span class="legend__name">angular</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="git"  id="git">
+                            <div class="item__legend">
+                                <span class="legend__name">Git</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                        <li class="tools__item" data-tool="node"  id="node">
+                            <div class="item__legend">
+                                <span class="legend__name">Node</span>
+                                <span class="legend__pocentagem">25%</span>
+                            </div>
+                            <div class="item__bar">
+                                <div class="bar__progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="projects section-animation" id="projects">
+                <div class="section-header">
+                    <h2 class="title">Projetos</h2>
+                </div>
+                <div class="projects__content">
+                    <ul class="projects__list">
+                        <li class="project__item">
+                            <div class="project__imagem"></div>
+                            <div class="project__text">
+                                <h3 class="project__name">Lorem Ipsum</h3>
+                                <p class="project__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
+                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
+                                </p>
+                                <div class="project__link">
+                                    <a class="btn__link" href="#">Veja aqui</a>
+                                    <a class="btn__link" href="#">Veja no GitHub</a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="project__item">
+                            <div class="project__imagem"></div>
+                            <div class="project__text">
+                                <h3 class="project__name">Lorem Ipsum</h3>
+                                <p class="project__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
+                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
+                                </p>
+                                <div class="project__link">
+                                    <a class="btn__link" href="#">Veja aqui</a>
+                                    <a class="btn__link" href="#">Veja no GitHub</a>
+                                </div>
+
+                            </div>
+                            
+                        </li>
+                        <li class="project__item">
+                            <div class="project__imagem"></div>
+                            <div class="project__text">
+                                <h3 class="project__name">Lorem Ipsum</h3>
+                                <p class="project__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
+                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
+                                </p>
+                                <div class="project__link">
+                                    <a class="btn__link" href="#">Veja aqui</a>
+                                    <a class="btn__link" href="#">Veja no GitHub</a>
+                                </div>
+
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="contact section-animation" id="contact">
+                <div class="section-header">
+                    <h2 class="title">Contato</h2>
+                </div>
+                <div class="contact__list">
+                    
+                    <a class="contact__item" href="https://wa.me/5521983835437/" target="_blank">                    
+                        <span class="contact__icon-container"><i class="material-icons contact__icon">call</i></span>
+                        <p class="contact__title">Telefone</p>
+                        <p class="contact__information">(21)98383-5437</p>
+                    </a>
+
+                    <a class="contact__item" href="https://www.linkedin.com/in/victormoreiraa/" target="_blank">
+                        <span class="contact__icon-container"><i class="fa-brands fa-linkedin-in contact__icon"></i></span>
+                        <p class="contact__title">Linkedin</p>
+                        <p class="contact__information">Victor Moreira</p>
+                    </a>
+
+                    <a class="contact__item" href="https://github.com/victormoreira92" target="_blank">
+                        <span class="contact__icon-container"><i class="material-icons contact__icon">mail</i></span>
+                        <p class="contact__title">GitHub</p>
+                        <p class="contact__information">@vhrmrj92</p>
+                    </a>
+
+                    <a class="contact__item" href="mailto:victormoreira.ti@outlook.com" target="_blank">
+                        <span class="contact__icon-container"><i class="material-icons contact__icon">mail</i></span>
+                        <p class="contact__title">Email</p>
+                        <p class="contact__information">victormoreira.ti@outlook.com</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Foi utilizado html, css, javascript e SASS</p>
+        <p class="footer__text">Desenvolvido por Victor Moreira.</p>
+    </footer>
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

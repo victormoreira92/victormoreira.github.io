@@ -1,0 +1,90 @@
+@import '../base/base';
+
+.projects{ 
+   .projects__content{
+    display: flex;
+    justify-content: center;
+    .section-header{
+        @include title-position(flex-start);
+    }
+    .projects__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        row-gap: 30px;
+        column-gap: 20px;
+        padding: 15px 0;
+        .project__item{
+            width: 30%;
+            border: 4px solid orange;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                border: 5px solid orange
+            }
+            .project__imagem{
+                background-image: url('../imagem/projetos/projeto.jpeg');
+                background-size: cover;
+                width: 100%;
+                height: 270px;
+                margin: 0 auto;
+                border-bottom: 3px solid orange;
+            }
+            .project__text{
+                padding: 0 15px;
+                .project__name{
+                    font-size: 1.2rem;
+                    margin:15px 0;
+                    font-weight: bold;
+                }
+                .project__description{
+                    margin: 15px 0;
+                    text-align: justify;
+                }
+                .project__link{
+                    display: flex;
+                    justify-content: space-around;
+                    margin:15px;
+                }
+                .btn__link{
+                    border: 2px solid orange;
+                    display:block;
+                    font-size: 1rem;
+                    padding: 10px;
+                    z-index: 3;
+                    text-decoration: none;
+                    margin: 1rem 0; 
+                    position:relative;
+                    &::before{
+                        content: "";
+                        display: inline;
+                        position:absolute;
+                        left:0%;
+                        top:0%;
+                        width: 100%;
+                        height: 0px;
+                        background-color: orange;
+                        transition: all 500ms ease-out;
+                        z-index: -1;
+                    }
+                    &:hover::before{
+                        height: 100%;
+                        animation: background-btn 500ms ease-in;
+                    }
+                }
+                
+            }   
+        
+        }
+    }
+}
+
+} 
+@keyframes background-btn {
+    0%{
+        height:0px;
+    }
+    100%{
+        height: 100%;
+    }
+}
