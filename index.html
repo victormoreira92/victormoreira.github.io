@@ -1,267 +1,420 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://kit.fontawesome.com/157e18743d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="icon.css">
-    <title>Victor Hugo Moreira</title>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Victor Moreira</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 </head>
-<body>
-    <header class="cabecalho">
-        <section class="cabecalho__container">
-            <div class="cabecalho__logo">
-            <img src="./assets/imagem/logo.png" alt="logo do desenvolvedor" class="logo">
-            </div>
-            <nav class="menu">
-                <ul class="menu__items">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#home">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#aboutme">Sobre mim</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#projects">Projetos</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#contact">Contato</a>
-                    </li>
-                    <li class="menu__item">
-                       
-                        <!--<button class="header__btn">
-                            <i class="material-icons">light_mode</i>
-                        </button>-->
-                    </li>
-                </ul>
-            </nav>
-           <div class="header__theme">
-                <button class="header__btn " id="theme">
-                    <i class="material-icons icon">light_mode</i>
-                </button>
-           </div>
-        </section>
-    
-        <section class="banner" id="home">
-        <div class="banner__container">
-            <div class="banner__animation">
-                <div class="ball__animation dark"></div>
-                <div class="ball__animation light"></div>
 
-            </div>
-            <div class="banner__content">
-                <h2 class="banner__text">Olá, eu sou <span class="name">Victor Moreira</span>.</h2>
-                <h2 class="banner__text">Sou desenvolvedor front-end em formação.</h2>
-                <h2 class="text__animation">casa</h2>
-            </div>
-        </div>
-        </section>
+<body id="top">
 
-    </header>
+	
 
-    <main class="content">
-        <div class="content__container">
-            <section class="aboutme section-animation" id="aboutme">
-                <div class="section-header">
-                    <h2 class="title">Sobre mim</h2>
-                    <div class="circle"></div>
-                </div>
-                <div class="aboutme__content">
-                    <div class="aboutme__image"></div>
-                    <div class="aboutme__text">
-                        <p class="text__paragraph">Meu nome é <span class="name__bold">Victor Moreira</span>, sou um desenvolvedor front-end e estou cursando o curso Superior de Tecnologia de Sistemas de Computação, pela UFF/CEDERJ.</p>
-                        <p class="text__paragraph">Sou biólogo com mais de 4 anos de experiência, e decidi migrar para a área de tecnologia em busca de oprtunidade melhores.</p>
-                        <p class="text__paragraph">Conheci a área de tecnologia durante meu mestrado, desde então tenho buscado me aperfeiçoar cada vez mais nessa área.</p>
-                        <p class="text__paragraph">Estou aberto a oprtunidades onde eu possa contribuir, crescer e aprender. Se você possui alguma oportunidade que se encaixa com meu perfil, 
-                            por favor não se hesite em se <a href="#contact">comunicar comigo</a>.</p>
-                        <a class="btn__link" href="#">
-                            <i class="fa-solid fa-file-lines icon__curriculum"></i>
-                            Download currículo
-                        </a>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="skills section-animation" id="skills">
-                <div class="section-header">
-                    <h2 class="title">Habilidades</h2>
-                </div>
-                <div class="tools" id="tools">
-                    <p class="tools__paragraph">Essas são as habilidades, ferramentas e tecnologias que uso para dar vida aos meus projetos:</p>
-                    <ul class="tools__list">
-                        <li class="tools__item" data-tool="html" id="html">
-                            <div class="item__legend">
-                                <span class="legend__name">HTML</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="css"  id="css">
-                            <div class="item__legend">
-                                <span class="legend__name">css</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="javascript"  id="javascript">
-                            <div class="item__legend">
-                                <span class="legend__name">Javascript</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="react"  id="react">
-                            <div class="item__legend">
-                                <span class="legend__name">React</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="angular"  id="angular">
-                            <div class="item__legend">
-                                <span class="legend__name">angular</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="git"  id="git">
-                            <div class="item__legend">
-                                <span class="legend__name">Git</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                        <li class="tools__item" data-tool="node"  id="node">
-                            <div class="item__legend">
-                                <span class="legend__name">Node</span>
-                                <span class="legend__pocentagem">25%</span>
-                            </div>
-                            <div class="item__bar">
-                                <div class="bar__progress"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="projects section-animation" id="projects">
-                <div class="section-header">
-                    <h2 class="title">Projetos</h2>
-                </div>
-                <div class="projects__content">
-                    <ul class="projects__list">
-                        <li class="project__item">
-                            <div class="project__imagem"></div>
-                            <div class="project__text">
-                                <h3 class="project__name">Lorem Ipsum</h3>
-                                <p class="project__description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
-                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
-                                </p>
-                                <div class="project__link">
-                                    <a class="btn__link" href="#">Veja aqui</a>
-                                    <a class="btn__link" href="#">Veja no GitHub</a>
-                                </div>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-                            </div>
-                        </li>
-                        <li class="project__item">
-                            <div class="project__imagem"></div>
-                            <div class="project__text">
-                                <h3 class="project__name">Lorem Ipsum</h3>
-                                <p class="project__description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
-                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
-                                </p>
-                                <div class="project__link">
-                                    <a class="btn__link" href="#">Veja aqui</a>
-                                    <a class="btn__link" href="#">Veja no GitHub</a>
-                                </div>
+   	<div class="intro-overlay"></div>	
 
-                            </div>
-                            
-                        </li>
-                        <li class="project__item">
-                            <div class="project__imagem"></div>
-                            <div class="project__text">
-                                <h3 class="project__name">Lorem Ipsum</h3>
-                                <p class="project__description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                    Nobis, quis fugiat eveniet placeat aperiam sit pariatur voluptatem quo, eius mollitia 
-                                    est impedit laudantium temporibus id nam sunt ipsam ex. Maiores!
-                                </p>
-                                <div class="project__link">
-                                    <a class="btn__link" href="#">Veja aqui</a>
-                                    <a class="btn__link" href="#">Veja no GitHub</a>
-                                </div>
+   	<div class="intro-content">
+   		<div class="row">
+				<div class="flags">
+					<a href="#"><img src="https://flagcdn.com/w320/gb.png" alt="English" class="flag" id="en-flag"></a>	
+					<a href="#"><img src="https://flagcdn.com/w320/br.png" alt="Português" class="flag" id="pt-flag"></a>
+				</div>
 
-                            </div>
-                            
-                        </li>
-                    </ul>
-                </div>
-            </section>
-    
-            <section class="contact section-animation" id="contact">
-                <div class="section-header">
-                    <h2 class="title">Contato</h2>
-                </div>
-                <div class="contact__list">
-                    
-                    <a class="contact__item" href="https://wa.me/5521983835437/" target="_blank">                    
-                        <span class="contact__icon-container"><i class="material-icons contact__icon">call</i></span>
-                        <p class="contact__title">Telefone</p>
-                        <p class="contact__information">(21)98383-5437</p>
-                    </a>
+   			<div class="col-twelve">
 
-                    <a class="contact__item" href="https://www.linkedin.com/in/victormoreiraa/" target="_blank">
-                        <span class="contact__icon-container"><i class="fa-brands fa-linkedin-in contact__icon"></i></span>
-                        <p class="contact__title">Linkedin</p>
-                        <p class="contact__information">Victor Moreira</p>
-                    </a>
+	   			<h5 class="title">Bem-vindo</h5>
+	   			<h1 class="introduce_text">Eu sou Victor Moreira.</h1>
 
-                    <a class="contact__item" href="https://github.com/victormoreira92" target="_blank">
-                        <span class="contact__icon-container"><i class="material-icons contact__icon">mail</i></span>
-                        <p class="contact__title">GitHub</p>
-                        <p class="contact__information">@vhrmrj92</p>
-                    </a>
+	   			<p class="intro-position">
+	   				<span>Software Developer</span>
+	   				<span>Ruby Developer</span> 
+	   			</p>
 
-                    <a class="contact__item" href="mailto:victormoreira.ti@outlook.com" target="_blank">
-                        <span class="contact__icon-container"><i class="material-icons contact__icon">mail</i></span>
-                        <p class="contact__title">Email</p>
-                        <p class="contact__information">victormoreira.ti@outlook.com</p>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">Foi utilizado html, css, javascript e SASS</p>
-        <p class="footer__text">Desenvolvido por Victor Moreira.</p>
-    </footer>
-    <script type="module" src="./assets/js/app.js"></script>
+					<p class="intro-position">
+						<p class="lead introduce_content_text">Desenvolvedor de software com experiência em Ruby on Rails. Apaixonado por tecnologia e boas práticas de desenvolvimento, aplico metodologias como TDD e BDD para garantir código de qualidade.</p>
+					</p>
+
+	   			<a class="button stroke smoothscroll" onclick="window.open('./cv/Victor_Moreira.pdf')" title="">Download CV</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content -->       	
+
+   </section> <!-- /intro -->
+
+	<section id="resume" class="grey-section">
+			
+		<div class="row">
+			<div class="row section-intro">
+				<div class="col-twelve">
+					<h5 class="skill_title">Habilidades</h5>
+					<h1 class="skills_subtitle">O que eu domino</h1>
+					<p class="lead skills_description">
+							Com experiência em desenvolvimento backend e frontend, testes automatizados, bancos de dados e infraestrutura, para criar aplicações eficientes e úteis.
+					</p>
+				</div>		
+			</div>
+			 <div class="skills">
+					<div class="skills-items">
+						<div class="skill">
+							<h4>Backend</h4>							
+							<p class="skill-box">Ruby/Ruby on Rails</p>
+							<p class="skill-box">Java/Spring Boot</p>
+						</div>
+						<div class="skill">
+							<h4 class="skill_banco_dados">Banco de Dados</h4>
+							<p class="skill-box">MySQL</p>
+							<p class="skill-box">PostgreSQL</p>
+							<p class="skill-box">MongoDB</p>
+							<p class="skill-box">Redis</p>
+						</div>
+						<div class="skill">
+							<h4>Testing</h4>
+							<p class="skill-box">Rspec</p>
+							<p class="skill-box">Capybara</p>
+						</div>
+						<div class="skill">
+							<h4>Frontend</h4>
+							<p class="skill-box">Angular</p>
+							<p class="skill-box">TypeScript</p>
+						</div>
+						<div class="skill">
+							<h4>Infra</h4>
+							<p class="skill-box">Docker</p>
+							<p class="skill-box">Microsoft Azure</p>
+						</div>		
+						<div class="skill">
+							<h4 class="skill_versionamento">Versionamento</h4>
+							<p class="skill-box">Git</p>
+							<p class="skill-box">Gitlab</p>
+						</div>						
+					</div>
+				</div>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+  </section>
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5 >Portfolio</h5>
+   			<h1 class="portifolio_title">Veja alguns dos meus trabalhos</h1>
+
+   			<p class="lead portifolio_subtitle">Uma coleção de projetos, incluindo aplicações web e APIs, que desenvolvi.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/micolab.png" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Micolab</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Aplication
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/sistema_documento.png" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">XML Flow</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Application
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/calulator.png"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">ValiData</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Application
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/deezer2youtube.png" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Deezer2YouTube</h3>	     					    
+		     					    	<span class="folio-types">
+													API
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+
+	      
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/micolab.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Micolab</h4>		      
+					      <p class="micolab_description">Sistema de gerenciamento de laboratório clínico, tanto o cadastro, como liberação de exames.</p>
+
+					      <div class="categories">Status:<span class="micolab_status">Em desenvolvimento</span></div>
+								<div class="categories"><span class="folio-types">Stack:</span> Ruby on Rails, MySQL, Bootstrap, Jquery</div>			               		               
+			               
+					   </div>
+
+			         <div class="link-box">
+			          <a href="https://github.com/victormoreira92/micolab" target="_blank"><i class="fa fa-github"></i>Github</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/sistema_documento.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>XML Flow</h4>		      
+					      <p class="xml_flow_description">Sistema para processamento de arquivos XML, permitindo a importação, validação e extração de dados de forma automatizada.</p>
+
+								<div class="categories">Status:<span class="xml_flow_status">Em desenvolvimento</span></div>
+								<div class="categories"><span class="folio-types">Stack:</span> Ruby on Rails(API), MongoDB, Angular, Sidekiq/Redis</div>			               		               	               
+					   </div>
+
+			         <div class="link-box">
+			          <a href="https://github.com/victormoreira92/maino-desafio" target="_blank"><i class="fa fa-github"></i>Github</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/calulator.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>ValiData</h4>		      
+
+								<p class="validata_description">Aplicação que realiza a validação de documentos e a geração de dados pessoais de forma automatizada e segura.</p>
+
+								<div class="categories">Status:<span class="validata_status"> Em desenvolvimento</span></div>
+								<div class="categories"><span class="folio-types">Stack:</span> Ruby on Rails(API), PostgreSQL, Angular, Sidekiq/Redis</div>			               		               	               
+					  </div>
+
+			         <div class="link-box">
+								  <a href="https://github.com/victormoreira92/valiData" target="_blank"><i class="fa fa-github"></i>Github</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/deezer2youtube.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+							<p class="deezer2youtube_description">API que permite transferir playlists do Deezer para o YouTube. Basta fornecer o link da playlist do Deezer, e o sistema buscará as músicas correspondentes no YouTube, criando uma nova playlist.</p>
+
+							<div class="categories">Status:<span class="validata_status"> Em desenvolvimento</span></div>
+							<div class="categories"><span class="folio-types">Stack:</span> Ruby on Rails (API), PostgreSQL, Sidekiq/Redis</div>			               		               	               		               
+					   </div>
+
+			         <div class="link-box">
+								<a href="https://github.com/victormoreira92/deezer2youtube" target="_blank"><i class="fa fa-github"></i>Github</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net"> Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+	<!-- stats Section
+   ================================================== -->
+	
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+   			<h5>Contact</h5>
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-info">
+
+			<div class="col-four tab-full">
+				<a href="https://github.com/victormoreira92" target="_blank">
+					<div class="icon">
+						<i class="fa fa-github"></i>
+					</div>
+						<h5>Github</h5>
+				</a>
+			</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+				 <h5>Email</h5>
+   			<p>victormoreira.ti@outlook.com</p>
+   		</div>
+
+   		<div class="col-four tab-full">
+				<a href="https://www.linkedin.com/in/victormoreiraa/" target="_blank">
+					<div class="icon">
+						<i class="fa fa-linkedin"></i>
+					</div>
+						<h5>Linkedin</h5>
+				</a>
+			</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script type="module" src="js/main.js"></script>
+
 </body>
+
 </html>
